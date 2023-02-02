@@ -19,8 +19,8 @@ pipeline {
         }
     stage('archieve') {
         steps {
-             sh ''' docker build -t koti1 .
-                    docker run --name kotik -d -p 5525:8080 koti1:latest
+             sh ''' docker build -t kotie .
+                    docker run --name kotikw -d -p 5523:8080 kotie:latest
                 '''
         }
     }
